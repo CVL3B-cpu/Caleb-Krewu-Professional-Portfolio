@@ -25,7 +25,7 @@ Professional portfolio for IT operations & support technician Caleb Krewu, inspi
 ## Implemented (2026-08-12, session 2)
 - Mixed theme per user request: hero, marquee, contact, footer stay dark; About (white), Experience (mist #F4F4F2), Certifications (white), Skills (ash #E9E9E5), Education (mist) are now grey/white with dark ink text and darker teal accent (#00857A). New tailwind tokens: ink/mist/ash/turq-dark. ChapterHeading gained a `tone="light"` prop.
 - Replaced hero portrait with user's newly uploaded B&W night-city photo (`/assets/caleb.png?v=2`) and made the portrait visible on mobile (was lg-only); verified visible at 390px.
-- Added GitHub (github.com/CVL3B) to contact details.
+- Added GitHub (github.com/CVL3B-cpu) to contact details.
 - User's spectrum gradient (teal→blue→purple→dark, `.gradient-spectrum` in App.css) applied as subtle accents: 3px seams between all sections (GradientSeam in Chapter.jsx), top strip on contact form card, hero overline dash, and top strip on featured cert card.
 - Added "AI Bootcamp — CAPACITI, completed 11 Aug 2026" as full-width gradient-accented card in Certified Knowledge; About stat updated 09→10 certifications.
 

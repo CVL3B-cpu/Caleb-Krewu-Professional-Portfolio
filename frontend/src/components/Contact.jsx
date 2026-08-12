@@ -33,8 +33,8 @@ const DETAILS = [
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/CVL3B",
-    href: "https://github.com/CVL3B",
+    value: "github.com/CVL3B-cpu",
+    href: "https://github.com/CVL3B-cpu",
     testid: "contact-github-link",
   },
   {
