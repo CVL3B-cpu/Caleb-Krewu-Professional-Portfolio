@@ -17,7 +17,7 @@ const TRAINING = [
 ];
 
 const Education = () => (
-  <section id="education" data-testid="education-section" className="relative bg-mist px-6 py-28 text-ink md:px-12 md:py-40">
+  <section id="education" data-testid="education-section" className="relative px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
       <ChapterHeading index="05" title="Education" hint="Foundations" tone="light" />
       <div className="grid gap-6 lg:grid-cols-12">

@@ -51,6 +51,16 @@
     color: transparent;
 }
 
+.text-outline-dark {
+    -webkit-text-stroke: 1px rgba(16, 16, 18, 0.3);
+    color: transparent;
+}
+
+.gradient-site {
+    background: #f7fafa;
+    background: linear-gradient(90deg, rgba(247, 250, 250, 1) 18%, rgba(190, 232, 237, 1) 67%, rgba(162, 239, 245, 1) 75%, rgba(127, 227, 235, 1) 80%, rgba(171, 232, 247, 1) 85%, rgba(129, 206, 235, 1) 97%);
+}
+
 .glow-turq {
     box-shadow: 0 0 60px rgba(13, 245, 227, 0.22);
 }

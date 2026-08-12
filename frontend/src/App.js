@@ -29,18 +29,20 @@ function App() {
         <main>
           <Hero />
           <MarqueeStrip />
-          <div aria-hidden className="h-32 bg-gradient-to-b from-obsidian via-zinc-800/60 to-white md:h-48" />
-          <About />
-          <GradientSeam />
-          <Experience />
-          <GradientSeam />
-          <Certifications />
-          <GradientSeam />
-          <Skills />
-          <GradientSeam />
-          <Education />
-          <GradientSeam />
-          <Contact />
+          <div className="gradient-site text-ink">
+            <div aria-hidden className="h-32 bg-gradient-to-b from-obsidian via-obsidian/70 to-transparent md:h-48" />
+            <About />
+            <GradientSeam />
+            <Experience />
+            <GradientSeam />
+            <Certifications />
+            <GradientSeam />
+            <Skills />
+            <GradientSeam />
+            <Education />
+            <GradientSeam />
+            <Contact />
+          </div>
         </main>
         <Footer />
         <Toaster theme="dark" position="bottom-right" />

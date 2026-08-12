@@ -38,7 +38,7 @@ const ROLES = [
 ];
 
 const Experience = () => (
-  <section id="experience" data-testid="experience-section" className="relative bg-mist px-6 py-28 text-ink md:px-12 md:py-40">
+  <section id="experience" data-testid="experience-section" className="relative px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
       <ChapterHeading index="02" title="Experience" hint="Where the work happened" tone="light" />
       <div className="relative ml-2 border-l border-ink/15 md:ml-40">

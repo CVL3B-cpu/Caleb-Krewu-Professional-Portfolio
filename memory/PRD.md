@@ -28,6 +28,8 @@ Professional portfolio for IT operations & support technician Caleb Krewu, inspi
 - Added GitHub (github.com/CVL3B-cpu) to contact details.
 - User's spectrum gradient (teal→blue→purple→dark, `.gradient-spectrum` in App.css) applied as subtle accents: 3px seams between all sections (GradientSeam in Chapter.jsx), top strip on contact form card, hero overline dash, and top strip on featured cert card.
 - Added "AI Bootcamp — CAPACITI, completed 11 Aug 2026" as full-width gradient-accented card in Certified Knowledge; About stat updated 09→10 certifications.
+- Hero "KREWU" surname is animated teal gradient text (.animated-teal-text, 7s shimmer); gentle dark→light fade added between hero/marquee and About.
+- Site-wide background (excluding hero/marquee): user's aqua gradient (`.gradient-site`, white→soft aqua 90deg) wraps About→Contact and Footer; sections transparent, white cards preserved (bg-white/75 with backdrop blur). Contact + Footer converted to light theme (ink text, turq-dark accents, .text-outline-dark).
 
 ## Backlog
 - P0: none

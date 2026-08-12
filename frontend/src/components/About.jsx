@@ -26,7 +26,7 @@ const PRINCIPLES = [
 ];
 
 const About = () => (
-  <section id="about" data-testid="about-section" className="relative bg-white px-6 py-28 text-ink md:px-12 md:py-40">
+  <section id="about" data-testid="about-section" className="relative px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
       <ChapterHeading index="01" title="The Operator" hint="Profile" tone="light" />
       <div className="grid gap-16 lg:grid-cols-12">
@@ -53,7 +53,7 @@ const About = () => (
           </Reveal>
           <div className="mt-14 grid gap-px border border-ink/10 bg-ink/10 sm:grid-cols-3">
             {STATS.map((s, i) => (
-              <Reveal key={s.label} delay={0.1 + i * 0.08} className="bg-mist p-8">
+              <Reveal key={s.label} delay={0.1 + i * 0.08} className="bg-white/75 p-8 backdrop-blur-sm">
                 <div
                   data-testid={`about-stat-${i}`}
                   className="font-heading text-5xl font-black tracking-tighter text-turq-dark"
@@ -70,7 +70,7 @@ const About = () => (
         <div className="lg:col-span-5">
           <div className="flex flex-col gap-px border border-ink/10 bg-ink/10">
             {PRINCIPLES.map((p, i) => (
-              <Reveal key={p.title} delay={0.1 + i * 0.08} className="group bg-mist p-8 transition-colors hover:bg-ash">
+              <Reveal key={p.title} delay={0.1 + i * 0.08} className="group bg-white/75 p-8 backdrop-blur-sm transition-colors hover:bg-white">
                 <div className="flex items-start gap-5">
                   <p.icon
                     size={22}

@@ -67,31 +67,31 @@ const Contact = () => {
   };
 
   const fieldCls =
-    "rounded-none border-0 border-b border-white/20 bg-transparent px-0 py-6 font-light text-white placeholder:font-mono placeholder:text-xs placeholder:uppercase placeholder:tracking-[0.2em] placeholder:text-zinc-600 focus-visible:border-turq focus-visible:ring-0 focus-visible:ring-offset-0";
+    "rounded-none border-0 border-b border-ink/20 bg-transparent px-0 py-6 font-light text-ink placeholder:font-mono placeholder:text-xs placeholder:uppercase placeholder:tracking-[0.2em] placeholder:text-zinc-400 focus-visible:border-turq-dark focus-visible:ring-0 focus-visible:ring-offset-0";
 
   return (
-    <section id="contact" data-testid="contact-section" className="relative overflow-hidden px-6 py-28 md:px-12 md:py-40">
+    <section id="contact" data-testid="contact-section" className="relative overflow-hidden px-6 py-28 text-ink md:px-12 md:py-40">
       <div
         aria-hidden
-        className="absolute -bottom-40 right-0 -z-10 h-[32rem] w-[32rem] rounded-full bg-turq-deep/30 blur-[150px]"
+        className="absolute -bottom-40 right-0 -z-0 h-[32rem] w-[32rem] rounded-full bg-turq/25 blur-[150px]"
       />
-      <div className="mx-auto max-w-[1600px]">
-        <ChapterHeading index="06" title="Contact" hint="Open a channel" />
+      <div className="relative mx-auto max-w-[1600px]">
+        <ChapterHeading index="06" title="Contact" hint="Open a channel" tone="light" />
         <div className="grid gap-20 lg:grid-cols-12">
           <div className="lg:col-span-6">
             <Reveal>
               <p className="font-heading text-6xl font-black uppercase leading-[0.9] tracking-tighter md:text-8xl">
                 Let&apos;s
                 <br />
-                <span className="text-outline">Talk.</span>
+                <span className="text-outline-dark">Talk.</span>
               </p>
-              <p className="mt-8 max-w-md text-base font-light leading-relaxed text-zinc-400 md:text-lg">
+              <p className="mt-8 max-w-md text-base font-light leading-relaxed text-zinc-600 md:text-lg">
                 Seeking an entry-level IT Support or Systems Administration
                 role — ready to leverage technical aptitude and administrative
                 experience in a technology-focused environment.
               </p>
             </Reveal>
-            <div className="mt-12 border-t border-white/10">
+            <div className="mt-12 border-t border-ink/10">
               {DETAILS.map((d, i) => (
                 <Reveal key={d.label} delay={0.1 + i * 0.06}>
                   {d.href ? (
@@ -100,23 +100,23 @@ const Contact = () => {
                       target={d.href.startsWith("http") ? "_blank" : undefined}
                       rel="noopener noreferrer"
                       data-testid={d.testid}
-                      className="group flex items-center gap-5 border-b border-white/10 py-5 transition-all hover:pl-3"
+                      className="group flex items-center gap-5 border-b border-ink/10 py-5 transition-all hover:pl-3"
                     >
-                      <d.icon size={18} className="shrink-0 text-turq" />
+                      <d.icon size={18} className="shrink-0 text-turq-dark" />
                       <span className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
                         {d.label}
                       </span>
-                      <span className="ml-auto text-sm font-light text-zinc-200 transition-colors group-hover:text-turq md:text-base">
+                      <span className="ml-auto text-sm font-light text-zinc-800 transition-colors group-hover:text-turq-dark md:text-base">
                         {d.value}
                       </span>
                     </a>
                   ) : (
-                    <div data-testid={d.testid} className="flex items-center gap-5 border-b border-white/10 py-5">
-                      <d.icon size={18} className="shrink-0 text-turq" />
+                    <div data-testid={d.testid} className="flex items-center gap-5 border-b border-ink/10 py-5">
+                      <d.icon size={18} className="shrink-0 text-turq-dark" />
                       <span className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
                         {d.label}
                       </span>
-                      <span className="ml-auto text-sm font-light text-zinc-200 md:text-base">
+                      <span className="ml-auto text-sm font-light text-zinc-800 md:text-base">
                         {d.value}
                       </span>
                     </div>
@@ -129,17 +129,17 @@ const Contact = () => {
             <form
               onSubmit={submit}
               data-testid="contact-form"
-              className="relative border border-white/10 bg-surface/60 p-8 backdrop-blur-sm md:p-12"
+              className="relative border border-ink/10 bg-white/75 p-8 backdrop-blur-sm md:p-12"
             >
               <div aria-hidden className="gradient-spectrum absolute inset-x-0 top-0 h-[3px]" />
               <div className="mb-10 flex items-center justify-between">
-                <span className="font-mono text-xs uppercase tracking-[0.25em] text-turq">
+                <span className="font-mono text-xs uppercase tracking-[0.25em] text-turq-dark">
                   // New transmission
                 </span>
                 <span className="flex gap-2">
-                  <span className="h-2 w-2 rounded-full bg-white/20" />
-                  <span className="h-2 w-2 rounded-full bg-white/20" />
-                  <span className="h-2 w-2 rounded-full bg-turq" />
+                  <span className="h-2 w-2 rounded-full bg-ink/15" />
+                  <span className="h-2 w-2 rounded-full bg-ink/15" />
+                  <span className="h-2 w-2 rounded-full bg-turq-dark" />
                 </span>
               </div>
               <div className="space-y-2">
@@ -174,9 +174,9 @@ const Contact = () => {
                 type="submit"
                 disabled={sending}
                 data-testid="contact-submit-button"
-                className="group relative mt-12 flex w-full items-center justify-center gap-3 overflow-hidden border border-turq px-8 py-5 font-mono text-xs uppercase tracking-[0.3em] text-turq transition-colors hover:text-obsidian disabled:cursor-not-allowed disabled:opacity-50"
+                className="group relative mt-12 flex w-full items-center justify-center gap-3 overflow-hidden border border-turq-dark px-8 py-5 font-mono text-xs uppercase tracking-[0.3em] text-turq-dark transition-colors hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
               >
-                <span className="absolute inset-0 -translate-x-full bg-turq transition-transform duration-500 ease-out group-hover:translate-x-0" />
+                <span className="absolute inset-0 -translate-x-full bg-turq-dark transition-transform duration-500 ease-out group-hover:translate-x-0" />
                 <span className="relative flex items-center gap-3">
                   {sending ? "Transmitting..." : "Send message"}
                   <Send size={14} />

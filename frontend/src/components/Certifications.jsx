@@ -89,7 +89,7 @@ const CERTS = [
 ];
 
 const Certifications = () => (
-  <section id="certifications" data-testid="certifications-section" className="relative bg-white px-6 py-28 text-ink md:px-12 md:py-40">
+  <section id="certifications" data-testid="certifications-section" className="relative px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
       <ChapterHeading index="03" title="Certified Knowledge" hint="Proof of work" tone="light" />
       <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
@@ -98,7 +98,7 @@ const Certifications = () => (
             key={cert.title}
             delay={(i % 3) * 0.08}
             data-testid={`cert-card-${i}`}
-            className={`group relative flex flex-col justify-between overflow-hidden border border-ink/10 bg-mist p-8 transition-all duration-500 hover:border-turq-dark/50 hover:shadow-[0_0_40px_rgba(0,133,122,0.15)] md:p-10 ${cert.span}`}
+            className={`group relative flex flex-col justify-between overflow-hidden border border-ink/10 bg-white/75 p-8 backdrop-blur-sm transition-all duration-500 hover:border-turq-dark/50 hover:shadow-[0_0_40px_rgba(0,133,122,0.15)] md:p-10 ${cert.span}`}
           >
             {cert.gradient && (
               <div aria-hidden className="gradient-spectrum absolute inset-x-0 top-0 h-[3px]" />

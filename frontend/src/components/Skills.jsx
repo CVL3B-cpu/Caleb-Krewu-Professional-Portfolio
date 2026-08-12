@@ -36,7 +36,7 @@ const GROUPS = [
 ];
 
 const Skills = () => (
-  <section id="skills" data-testid="skills-section" className="relative bg-ash px-6 py-28 text-ink md:px-12 md:py-40">
+  <section id="skills" data-testid="skills-section" className="relative px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
       <ChapterHeading index="04" title="Capabilities" hint="The toolkit" tone="light" />
       <div className="grid gap-16 lg:grid-cols-12">
