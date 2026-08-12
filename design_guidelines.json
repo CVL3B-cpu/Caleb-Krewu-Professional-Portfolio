@@ -1,0 +1,72 @@
+{
+  "theme": "dark",
+  "archetype": "Electric & Neon meets Swiss Brutalist",
+  "colors": {
+    "background": "#050505",
+    "surface": "#0A0A0A",
+    "primary_accent": "#0DF5E3",
+    "secondary_accent": "#005C5C",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "gradient_strategy": "No flat linear backgrounds. Use deep black #050505 as the base. Create massive, blurred, radial mesh-gradients using #005C5C and #0DF5E3 strategically placed (e.g., top right corner, or glowing behind the hero portrait) with opacity-30. Always overlay a grain/noise texture to kill digital flatness."
+  },
+  "typography": {
+    "font_heading": "Cabinet Grotesk",
+    "font_body": "IBM Plex Sans",
+    "font_mono": "JetBrains Mono",
+    "h1": "text-5xl md:text-6xl lg:text-[5rem] tracking-tighter leading-none font-black uppercase",
+    "h2": "text-3xl md:text-5xl tracking-tight leading-none font-bold",
+    "h3": "text-xl md:text-2xl tracking-tight",
+    "overline": "text-xs md:text-sm font-mono tracking-[0.2em] uppercase text-[#0DF5E3]",
+    "body": "text-base md:text-lg leading-relaxed font-light text-gray-300",
+    "instructions": "NEVER center-align headings by default. Use explicit left or right alignment to create asymmetric tension. Overlines must use the mono font with wide tracking."
+  },
+  "visual_enhancers": {
+    "texture": "Add a fixed, full-screen noise/grain SVG overlay with pointer-events-none and low opacity (approx 3-5%) mixed with overlay blend mode to give a premium, tactile feel.",
+    "borders": "Use 1px solid borders (border-white/10) to define layout structure. In the 'Tetris Grid', leave some borders open or use crosshairs (+) at intersections.",
+    "hover_states": "Hovering on interactive elements should shift text to #0DF5E3, and add a subtle 0px 0px 15px rgba(13, 245, 227, 0.3) drop-shadow.",
+    "images": "Hero portrait MUST be a composite: Black-and-white portrait of Caleb heavily contrasted, clipped inside a perfect circle, placed OVER a blurry night city background. Or use mix-blend-luminosity to fuse them."
+  },
+  "layouts": {
+    "hero": "Kinetic Hero. Left side: Massive typography 'CALEB KREWU' masked and revealed line-by-line using framer-motion on load. Right side: The B&W circular portrait overlapping the blurry neon turquoise city background.",
+    "marquee": "Use react-fast-marquee for a slow 'Editorial Ribbon' of skills. Pale turquoise text on a deep black background or vice versa. Use JetBrains Mono, uppercase, separated by large dots or plus signs.",
+    "bento_grid": "For Certifications. Use the 'Tetris' Grid Mode A. grid-cols-1 md:grid-cols-12 gap-8. Mix tall and wide blocks. Do NOT fill perfectly. Leave negative space.",
+    "timeline": "For Experience. Left col: mono dates. Right col: content. Connected by a 1px vertical line (border-white/10) with glowing #0DF5E3 dots at each node.",
+    "contact": "Asymmetric layout. Left: massive text 'LET\\'S TALK'. Right: Shadcn form heavily customized to the 'Retro-Futurism' terminal look. Transparent inputs, 1px turquoise bottom borders, no heavy white backgrounds."
+  },
+  "motion": {
+    "scrolling": "MANDATORY: Use '@studio-freight/react-lenis' for smooth momentum scrolling.",
+    "reveals": "Use framer-motion for viewport-triggered reveals (initial={{ y: 40, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, margin: '-100px' }}).",
+    "micro_interactions": "Buttons should have a subtle text scramble effect on hover or a sweeping 1px turquoise line."
+  },
+  "components_to_use": [
+    "framer-motion (for kinetic typography and scroll reveals)",
+    "lucide-react (for sharp, technical icons)",
+    "react-fast-marquee (for the skills strip)",
+    "Shadcn UI (Form, Input, Textarea - MUST be styled dark/transparent with turquoise accents)"
+  ],
+  "image_urls": {
+    "hero_portrait": {
+      "url": "https://images.unsplash.com/photo-1617746652908-91e66c07499a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHw0fHxibGFjayUyMG1hbiUyMHBvcnRyYWl0JTIwYmxhY2slMjBhbmQlMjB3aGl0ZSUyMGRyYW1hdGljfGVufDB8fHx8MTc4NjUyNjE0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Dramatic B&W portrait of Caleb. Apply object-cover and a perfect circular clip-path."
+    },
+    "hero_city_bg": {
+      "url": "https://images.unsplash.com/photo-1535391879778-3bae11d29a24?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxuaWdodCUyMGNpdHklMjBibHVycnklMjBuZW9uJTIwdHVycXVvaXNlfGVufDB8fHx8MTc4NjUyNjE0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Blurry neon turquoise night city. Place behind the portrait or as a subtle parallax background for the hero section."
+    }
+  },
+  "universal_guidelines_for_main_agent": [
+    "NEVER use default Inter font for headings. Use Cabinet Grotesk.",
+    "Do NOT center align the app container (.App { text-align: center; } is FORBIDDEN).",
+    "Generous spacing is mandatory. Use p-12, p-24, py-32 to create breathing room.",
+    "Use layered z-indexes. E.g., text scrolling OVER a fixed background element.",
+    "All interactive elements MUST include a data-testid attribute.",
+    "Buttons must not be generic rounded-md blue blocks. Use sharp corners (rounded-none) with 1px turquoise borders, or pill-shaped with terminal styling.",
+    "Forms must NOT have a solid white background. Use transparent backgrounds with solid borders.",
+    "Do not guess or leave empty placeholders. Use the provided text from the prompt (CAPACITI IT Support Service Desk Technician, Western Cape Government Financial Systems & Administration Intern, Animal Ambulance Operator)."
+  ],
+  "accessibility": {
+    "contrast": "Ensure off-white text on the black/#0A0A0A background meets APCA contrast standards. If placing text over the mesh gradient, ensure readability via text-shadow or a darker overlay."
+  }
+}
