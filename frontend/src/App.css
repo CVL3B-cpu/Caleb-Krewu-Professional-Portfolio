@@ -58,3 +58,25 @@
 .gradient-spectrum {
     background: linear-gradient(90deg, rgba(14, 195, 201, 1) 0%, rgba(33, 69, 196, 1) 50%, rgba(129, 57, 212, 1) 80%, rgba(14, 2, 33, 1) 100%);
 }
+
+@keyframes teal-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-teal-text {
+    background: linear-gradient(90deg, #0DF5E3 0%, #00857A 30%, #0ec3c9 55%, #7de8de 75%, #0DF5E3 100%);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: teal-shift 7s ease-in-out infinite;
+}

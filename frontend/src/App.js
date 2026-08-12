@@ -29,7 +29,7 @@ function App() {
         <main>
           <Hero />
           <MarqueeStrip />
-          <GradientSeam />
+          <div aria-hidden className="h-32 bg-gradient-to-b from-obsidian via-zinc-800/60 to-white md:h-48" />
           <About />
           <GradientSeam />
           <Experience />

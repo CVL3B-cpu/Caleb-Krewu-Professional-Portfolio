@@ -75,7 +75,7 @@ const Hero = () => {
               Caleb
             </MaskedLine>
             <MaskedLine delay={0.4} className="text-[17vw] md:text-[9.5rem] lg:text-[11rem]">
-              <span className="text-outline">Krewu</span>
+              <span className="animated-teal-text">Krewu</span>
             </MaskedLine>
           </h1>
           <MaskedLine delay={0.6}>
