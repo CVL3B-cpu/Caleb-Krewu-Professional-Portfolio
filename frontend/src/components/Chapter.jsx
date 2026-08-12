@@ -15,6 +15,10 @@ export const Reveal = ({ children, delay = 0, className = "", ...rest }) => (
   </motion.div>
 );
 
+export const GradientSeam = () => (
+  <div aria-hidden className="gradient-spectrum h-[3px] w-full" />
+);
+
 export const ChapterHeading = ({ index, title, hint, tone = "dark" }) => {
   const light = tone === "light";
   return (

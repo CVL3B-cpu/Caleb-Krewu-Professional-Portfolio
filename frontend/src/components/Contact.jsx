@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { ChapterHeading, Reveal } from "@/components/Chapter";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -29,6 +29,13 @@ const DETAILS = [
     value: "linkedin.com/in/caleb-krewu-924840298",
     href: "https://linkedin.com/in/caleb-krewu-924840298",
     testid: "contact-linkedin-link",
+  },
+  {
+    icon: Github,
+    label: "GitHub",
+    value: "github.com/CVL3B",
+    href: "https://github.com/CVL3B",
+    testid: "contact-github-link",
   },
   {
     icon: MapPin,
@@ -122,8 +129,9 @@ const Contact = () => {
             <form
               onSubmit={submit}
               data-testid="contact-form"
-              className="border border-white/10 bg-surface/60 p-8 backdrop-blur-sm md:p-12"
+              className="relative border border-white/10 bg-surface/60 p-8 backdrop-blur-sm md:p-12"
             >
+              <div aria-hidden className="gradient-spectrum absolute inset-x-0 top-0 h-[3px]" />
               <div className="mb-10 flex items-center justify-between">
                 <span className="font-mono text-xs uppercase tracking-[0.25em] text-turq">
                   // New transmission

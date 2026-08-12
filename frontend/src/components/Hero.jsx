@@ -66,7 +66,7 @@ const Hero = () => {
               data-testid="hero-overline"
               className="mb-6 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-turq md:text-sm"
             >
-              <span className="h-px w-10 bg-turq" />
+              <span className="gradient-spectrum h-[3px] w-10" />
               IT Operations &amp; Support Technician
             </span>
           </MaskedLine>

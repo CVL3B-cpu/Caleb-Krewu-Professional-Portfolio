@@ -5,6 +5,7 @@ import {
   Code2,
   Cpu,
   Network,
+  Rocket,
   ShieldCheck,
   Sparkles,
   TerminalSquare,
@@ -76,6 +77,15 @@ const CERTS = [
     text: "WCG Basic ICT Training Course and Basic Computer Literacy Course.",
     tags: ["ICT", "Literacy"],
   },
+  {
+    icon: Rocket,
+    title: "AI Bootcamp",
+    provider: "CAPACITI — Completed 11 Aug 2026",
+    span: "md:col-span-12",
+    gradient: true,
+    text: "Intensive, hands-on AI bootcamp at CAPACITI — applying artificial intelligence concepts, tools and workflows to real-world technology and support scenarios.",
+    tags: ["CAPACITI", "Applied AI", "Aug 2026"],
+  },
 ];
 
 const Certifications = () => (
@@ -90,6 +100,9 @@ const Certifications = () => (
             data-testid={`cert-card-${i}`}
             className={`group relative flex flex-col justify-between overflow-hidden border border-ink/10 bg-mist p-8 transition-all duration-500 hover:border-turq-dark/50 hover:shadow-[0_0_40px_rgba(0,133,122,0.15)] md:p-10 ${cert.span}`}
           >
+            {cert.gradient && (
+              <div aria-hidden className="gradient-spectrum absolute inset-x-0 top-0 h-[3px]" />
+            )}
             <div
               aria-hidden
               className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-turq/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"

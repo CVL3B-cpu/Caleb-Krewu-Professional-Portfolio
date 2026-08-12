@@ -3,7 +3,7 @@ import { Globe, ShieldCheck, Zap } from "lucide-react";
 
 const STATS = [
   { value: "10+", label: "Months inside government finance systems" },
-  { value: "09", label: "Certifications across AI, ML & ICT" },
+  { value: "10", label: "Certifications across AI, ML & ICT" },
   { value: "02", label: "Languages — English & Afrikaans" },
 ];
 
