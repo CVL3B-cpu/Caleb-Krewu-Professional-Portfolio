@@ -38,17 +38,13 @@ const ROLES = [
 ];
 
 const Experience = () => (
-  <section id="experience" data-testid="experience-section" className="relative px-6 py-28 md:px-12 md:py-40">
-    <div
-      aria-hidden
-      className="absolute left-1/2 top-0 -z-10 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-turq-deep/25 blur-[140px]"
-    />
+  <section id="experience" data-testid="experience-section" className="relative bg-mist px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
-      <ChapterHeading index="02" title="Experience" hint="Where the work happened" />
-      <div className="relative ml-2 border-l border-white/10 md:ml-40">
+      <ChapterHeading index="02" title="Experience" hint="Where the work happened" tone="light" />
+      <div className="relative ml-2 border-l border-ink/15 md:ml-40">
         {ROLES.map((role, i) => (
           <Reveal key={role.title} delay={i * 0.05} className="relative pb-20 pl-10 last:pb-0 md:pl-16">
-            <span className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-turq shadow-[0_0_15px_rgba(13,245,227,0.7)]" />
+            <span className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-turq-dark shadow-[0_0_15px_rgba(0,133,122,0.5)]" />
             <span className="absolute -top-1 right-full mr-6 hidden whitespace-nowrap font-mono text-sm tracking-[0.15em] text-zinc-500 md:block">
               {role.dates}
             </span>
@@ -60,21 +56,21 @@ const Experience = () => (
                 {role.title}
               </h3>
               {role.tag && (
-                <span className="border border-turq/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-turq">
+                <span className="border border-turq-dark/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-turq-dark">
                   {role.tag}
                 </span>
               )}
             </div>
-            <p className="mt-2 font-mono text-sm uppercase tracking-[0.15em] text-turq">
+            <p className="mt-2 font-mono text-sm uppercase tracking-[0.15em] text-turq-dark">
               {role.org}
             </p>
             <ul className="mt-6 max-w-3xl space-y-3">
               {role.points.map((pt) => (
                 <li
                   key={pt}
-                  className="flex gap-4 text-sm font-light leading-relaxed text-zinc-400 md:text-base"
+                  className="flex gap-4 text-sm font-light leading-relaxed text-zinc-600 md:text-base"
                 >
-                  <span className="mt-2 h-px w-6 shrink-0 bg-turq/60" />
+                  <span className="mt-2 h-px w-6 shrink-0 bg-turq-dark/60" />
                   {pt}
                 </li>
               ))}

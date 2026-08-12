@@ -79,36 +79,36 @@ const CERTS = [
 ];
 
 const Certifications = () => (
-  <section id="certifications" data-testid="certifications-section" className="relative px-6 py-28 md:px-12 md:py-40">
+  <section id="certifications" data-testid="certifications-section" className="relative bg-white px-6 py-28 text-ink md:px-12 md:py-40">
     <div className="mx-auto max-w-[1600px]">
-      <ChapterHeading index="03" title="Certified Knowledge" hint="Proof of work" />
+      <ChapterHeading index="03" title="Certified Knowledge" hint="Proof of work" tone="light" />
       <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
         {CERTS.map((cert, i) => (
           <Reveal
             key={cert.title}
             delay={(i % 3) * 0.08}
             data-testid={`cert-card-${i}`}
-            className={`group relative flex flex-col justify-between overflow-hidden border border-white/10 bg-surface p-8 transition-all duration-500 hover:border-turq/50 hover:shadow-[0_0_40px_rgba(13,245,227,0.12)] md:p-10 ${cert.span}`}
+            className={`group relative flex flex-col justify-between overflow-hidden border border-ink/10 bg-mist p-8 transition-all duration-500 hover:border-turq-dark/50 hover:shadow-[0_0_40px_rgba(0,133,122,0.15)] md:p-10 ${cert.span}`}
           >
             <div
               aria-hidden
-              className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-turq/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-turq/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             />
             <div>
               <div className="flex items-start justify-between gap-4">
-                <cert.icon size={cert.featured ? 34 : 26} className="shrink-0 text-turq" />
+                <cert.icon size={cert.featured ? 34 : 26} className="shrink-0 text-turq-dark" />
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500">
                   {cert.provider}
                 </span>
               </div>
               <h3
-                className={`mt-6 font-heading font-bold tracking-tight transition-colors group-hover:text-turq ${
+                className={`mt-6 font-heading font-bold tracking-tight transition-colors group-hover:text-turq-dark ${
                   cert.featured ? "text-3xl md:text-4xl" : "text-xl md:text-2xl"
                 }`}
               >
                 {cert.title}
               </h3>
-              <p className="mt-3 max-w-md text-sm font-light leading-relaxed text-zinc-400">
+              <p className="mt-3 max-w-md text-sm font-light leading-relaxed text-zinc-600">
                 {cert.text}
               </p>
             </div>
@@ -116,7 +116,7 @@ const Certifications = () => (
               {cert.tags.map((t) => (
                 <span
                   key={t}
-                  className="border border-white/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-zinc-400 transition-colors group-hover:border-turq/40 group-hover:text-turq"
+                  className="border border-ink/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-zinc-600 transition-colors group-hover:border-turq-dark/40 group-hover:text-turq-dark"
                 >
                   {t}
                 </span>

@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         turq: '#0DF5E3',
         'turq-deep': '#005C5C',
+        'turq-dark': '#00857A',
+        ink: '#101012',
+        mist: '#F4F4F2',
+        ash: '#E9E9E5',
         obsidian: '#050505',
         surface: '#0A0A0A',
         background: 'hsl(var(--background))',

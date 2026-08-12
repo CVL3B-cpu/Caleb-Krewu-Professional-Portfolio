@@ -22,6 +22,10 @@ Professional portfolio for IT operations & support technician Caleb Krewu, inspi
 - Backend contact API verified; form saves enquiries to MongoDB with success toast.
 - Fixed: replaced deprecated @studio-freight/react-lenis with `lenis` (React 19 invalid-hook-call crash).
 
+## Implemented (2026-08-12, session 2)
+- Mixed theme per user request: hero, marquee, contact, footer stay dark; About (white), Experience (mist #F4F4F2), Certifications (white), Skills (ash #E9E9E5), Education (mist) are now grey/white with dark ink text and darker teal accent (#00857A). New tailwind tokens: ink/mist/ash/turq-dark. ChapterHeading gained a `tone="light"` prop.
+- Replaced hero portrait with user's newly uploaded B&W night-city photo (`/assets/caleb.png?v=2`) and made the portrait visible on mobile (was lg-only); verified visible at 390px.
+
 ## Backlog
 - P0: none
 - P1: Admin view/page for contact enquiries (currently readable via GET /api/contact only).

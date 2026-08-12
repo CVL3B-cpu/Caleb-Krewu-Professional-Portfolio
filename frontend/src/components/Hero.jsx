@@ -130,23 +130,23 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="relative hidden justify-end lg:col-span-4 lg:flex">
+        <div className="relative flex justify-center lg:col-span-4 lg:justify-end">
           <motion.div
             style={{ y: yPortrait }}
             className="relative"
           >
             <div
               aria-hidden
-              className="absolute left-1/2 top-1/2 h-[26rem] w-[26rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-turq/25 blur-[100px]"
+              className="absolute left-1/2 top-1/2 h-[20rem] w-[20rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-turq/25 blur-[100px] lg:h-[26rem] lg:w-[26rem]"
             />
             <motion.div
               initial={{ clipPath: "circle(0% at 50% 50%)" }}
               animate={{ clipPath: "circle(50% at 50% 50%)" }}
               transition={{ duration: 1.4, delay: 0.55, ease: EASE }}
-              className="glow-turq relative h-80 w-80 overflow-hidden rounded-full border border-white/15 xl:h-96 xl:w-96"
+              className="glow-turq relative h-60 w-60 overflow-hidden rounded-full border border-white/15 md:h-72 md:w-72 lg:h-80 lg:w-80 xl:h-96 xl:w-96"
             >
               <img
-                src="/assets/caleb.png"
+                src="/assets/caleb.png?v=2"
                 alt="Caleb Krewu — portrait"
                 data-testid="hero-portrait"
                 className="h-full w-full scale-105 object-cover contrast-125 grayscale"
@@ -157,7 +157,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.4, duration: 0.8 }}
               viewBox="0 0 200 200"
-              className="animate-spin-slow absolute -bottom-10 -left-14 h-40 w-40"
+              className="animate-spin-slow absolute -bottom-10 -left-10 hidden h-40 w-40 md:block lg:-left-14"
             >
               <defs>
                 <path id="circlePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
